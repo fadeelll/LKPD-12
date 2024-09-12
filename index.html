@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: hsl(165, 97%, 48%);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333333ba;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #07f8b8;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(220, 245, 77);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #00d5ff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>FADEEL</h1>
+  <p>menceritakan tentang keindahan alam</p>
+</div>
+
+<div class="topnav">
+  <a href="#">float</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>KEINDAHAN ALAM</h2>
+      <h5>PANORAMA, may 25, 2008</h5>
+      <div class="" style="height:250px;"><img src="c:\Users\MyBook Pro\Documents\lkpd-1\pemandangan.jpg" alt=""height="250" width="500"></div>
+      <p>MAHA KARYA TUHAN</p>
+      <p>Keindahan merupakan salah satu konsep yang sangat subjektif, namun memiliki pengaruh yang besar dalam kehidupan manusia. Setiap orang memiliki pandangan yang berbeda-beda mengenai apa yang dianggap indah. Keindahan bisa ditemukan dalam berbagai hal, mulai dari alam, seni, musik, hingga dalam perilaku dan sikap seseorang. </p>
+    </div>
+    <div class="card">
+      <h2>KEINDAHAN</h2>
+      <h5></h5>
+      <div class="" style="height:250px;"><img src="c:\Users\MyBook Pro\Documents\lkpd-1\gambar-pemandangan-alam-indah2.jpg" alt=""height="250" width="500"></div>
+      <p>suatu penenang</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>sponsor</h2>
+      <div class="fakeimg" style="height:80px;"><img src="c:\Users\MyBook Pro\Documents\lkpd-1\th.jpeg" alt=""height="50" width="50"></div>
+      <p></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p><img src="c:\Users\MyBook Pro\Documents\lkpd-1\foto-foto-pemandangan-gunung-1.jpg" alt=""height="100" width="150"></p></div>
+      <div class="fakeimg"><p><img src="c:\Users\MyBook Pro\Documents\lkpd-1\Foto Pemandangan Air Terjun 1.jpg" alt=""height="100" width="150"></p></div>
+      <div class="fakeimg"><p><img src="c:\Users\MyBook Pro\Documents\lkpd-1\dZxqlp.jpg" alt=""height="100" width="150"></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div><img src="c:\Users\MyBook Pro\Documents\lkpd-1\google-chrome-logo-0.png" alt=""height="100" width="100"></div>
+  <div><img src="c:\Users\MyBook Pro\Documents\lkpd-1\th (2).jpeg" alt=""height="100" width="100"></div>
+  <div><img src="c:\Users\MyBook Pro\Documents\lkpd-1\th (4).jpeg" alt=""height="100" width="100"></div>  
+  <div><img src="c:\Users\MyBook Pro\Documents\lkpd-1\th (5).jpeg" alt=""height="100"width="100"></div>
+  <div><img src="c:\Users\MyBook Pro\Documents\lkpd-1\th (5).jpeg" alt=""height="100"width="100"></div>
+</div>
+
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
+
+<div class="grid-container">
+  <div class="item1">muhammad fadeel mubarok</div>
+  <div class="item2"><img src="c:\Users\MyBook Pro\Documents\lkpd-1\Asus-Laptop-PNG-Photo.png" alt=""height="200" width="200"></div>
+  <div class="item3">rekayasa perangkat lunak</div>  
+  <div class="item4">XI</div>
+  <div class="item5">almt.KALIJATI PRIDE</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
